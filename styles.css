@@ -1,0 +1,95 @@
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #FFF;
+}
+
+a, button, .btn {
+	transition: all .1s ease-in;
+}
+
+/* styles for banner */
+.banner {
+	background: url(bg.jpg) center center no-repeat;
+	-webkit-background-size:cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	padding-top: 25px;
+}
+
+.banner .filter {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(shade4.png) center center;
+	z-index: 0;
+}
+
+.banner .site-header,
+.banner .content {
+	position: relative;
+	z-index: 1;
+}
+
+.banner .logo {
+	padding-left: 15px;
+}
+
+.banner ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.site-nav ul li {
+	float: left;
+}
+
+.site-nav ul li + li:before {
+	content: '|';
+	padding: 0 15px;
+}
+
+.site-nav ul li a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.site-nav ul li a:hover {
+	text-decoration: underline;
+}
+
+.socials {
+	text-align: right;
+}
+
+.socials li {
+	display: inline-block;
+}
+
+.socials li a {
+	font-size: 18px;
+	color: rgba (255, 255, 255, .5);
+}
+
+.socials li a:hover {
+	font-size: rgba (255, 255, 255, 1);
+}
+
+.socials li + li {
+	margin-left: 14px;
+}
+
+.banner .content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.banner .site-title {
+	font-size: 48px;
+	text-transform: uppercase;
+}
